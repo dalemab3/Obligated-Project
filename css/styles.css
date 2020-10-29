@@ -5,6 +5,12 @@
   font-weight: 100; }
 
 @font-face {
+  font-family: "poppins";
+  src: url("fonts/Poppins-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 200; }
+
+@font-face {
   font-family: "mytupi";
   src: url("fonts/mytupi.ttf");
   font-style: normal;
@@ -27,6 +33,7 @@ li {
   height: 10px;
   border-radius: 100%; }
 
+/* navBar */
 .overlay {
   height: 100%;
   width: 0;
@@ -72,15 +79,22 @@ li {
     top: 15px;
     right: 35px; } }
 
-@media screen and (max-height: 450px) {
-  .homeAbout p {
-    font-size: 20px; } }
-
 hr.solid {
   border-top: 2px solid #999; }
 
 .bg-dark {
   background-color: #1A1A1A !important; }
+
+/* navBar end*/
+/* fullscreen Image */
+.bgFullPage {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white; }
+  .bgFullPage h1 {
+    font-size: 60px; }
 
 /* homeInfo Start*/
 .homeInfo {
@@ -107,11 +121,11 @@ hr.solid {
   -webkit-transform: scale(1.05);
   transform: scale(1.05); }
 
-@media screen and (max-height: 450px) {
-  .homeAbout p {
-    font-size: 20px; } }
-
 /* homeInfo end*/
+@media screen and (max-height: 768px) {
+  .aboutContent p {
+    font-size: 40px; } }
+
 /* footer start*/
 .socialButtons .btn-lg {
   padding: 8px 8px !important; }
@@ -174,3 +188,38 @@ hr.solid {
   text-decoration: none; }
 
 /* footer end*/
+/* timeline */
+.timeline {
+  border-left: 1px dashed black;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-family: "poppins"; }
+
+.timeline .timeline-box {
+  padding-left: 40px;
+  margin-bottom: 30px;
+  position: relative; }
+
+.timeline-icon {
+  left: -18px;
+  top: 0;
+  background-color: red;
+  position: absolute;
+  width: 35px;
+  z-index: 1;
+  text-align: center;
+  line-height: 35px; }
+
+.timeline-icon {
+  color: #fff; }
+
+.timeline .timeline-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  margin: -4px; }

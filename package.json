@@ -4,6 +4,7 @@
   "description": "This is a Portfolio Project Named: \"Obligated\", which is a E-commerce website that will showcase my knowledge and understanding of Bootstrap.",
   "main": "index.html",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
