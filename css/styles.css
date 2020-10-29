@@ -19,9 +19,6 @@ li {
 .navbar {
   min-height: 80px; }
 
-.navbar-toggler {
-  padding: 4px 12px; }
-
 .homeCards, .homeTitle, .homeAbout {
   padding-top: 30px; }
 
@@ -68,18 +65,83 @@ li {
   font-size: 60px; }
 
 @media screen and (max-height: 450px) {
-  .overlay a {
+  .homeCards p {
     font-size: 20px; }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px; } }
 
+@media screen and (max-height: 450px) {
+  .homeAbout p {
+    font-size: 20px; } }
+
 hr.solid {
   border-top: 2px solid #999; }
 
 .bg-dark {
   background-color: #1A1A1A !important; }
+
+/* homeInfo Start*/
+.homeInfo {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.homeAbout {
+  transition: transform .2s;
+  padding: 0 !important; }
+  .homeAbout p {
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    padding: 5px;
+    text-align: center;
+    width: 113%;
+    font-size: 40px;
+    line-height: 20px;
+    margin-top: -20px;
+    z-index: 3; }
+
+.homeAbout:hover {
+  -ms-transform-: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05); }
+
+@media screen and (max-height: 450px) {
+  .homeAbout p {
+    font-size: 20px; } }
+
+/* homeInfo end*/
+/* footer start*/
+.socialButtons .btn-lg {
+  padding: 8px 8px !important; }
+
+.footerLinks {
+  list-style-type: none;
+  padding-left: 0 !important; }
+  .footerLinks a:link {
+    color: #FFFFFF80; }
+  .footerLinks a:visited {
+    color: #FFFFFF80; }
+  .footerLinks a:hover {
+    color: white;
+    text-decoration: none; }
+
+.footer-copyright p {
+  font-family: "poppins";
+  color: #FFFFFF80;
+  font-size: 12px;
+  margin: 0; }
+
+.footer-copyright a:link {
+  color: #FFFFFF80; }
+
+.footer-copyright a:visited {
+  color: #FFFFFF80; }
+
+.footer-copyright a:hover {
+  color: white;
+  text-decoration: none; }
 
 .socialButtons .btn-lg {
   padding: 8px 8px !important; }
@@ -110,3 +172,5 @@ hr.solid {
 .footer-copyright a:hover {
   color: white;
   text-decoration: none; }
+
+/* footer end*/
