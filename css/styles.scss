@@ -19,6 +19,9 @@
     font-weight: 100;
 }
 
+.homeCards {
+  padding-top: 15px;
+}
 
 body {
     font-family: "mytupi";
@@ -28,10 +31,6 @@ li {
 }
 .navbar {
     min-height: 80px;
-  }
-
-  .homeCards, .homeTitle, .homeAbout {
-    padding-top: 30px;
   }
 
   .carousel-indicators li {
@@ -84,7 +83,9 @@ li {
 }
 
 @media screen and (max-height: 450px) {
-  .homeCards p {font-size: 20px}
+  .homeCards p {
+    font-size: 20px;
+  }
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
@@ -269,4 +270,127 @@ a:hover {
   bottom: 0;
   margin: -4px;
 
+}
+
+/* Card Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  overflow: hidden;
+  box-sizing: border-box !important;
+  img {
+    z-index: 2;
+  }
+}
+
+.card-heading {
+  text-align: center;
+  color: white;
+  h3 {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  .card-link {
+    font-family: "poppins";
+    h4 > a {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    
+    h4 > a:hover {
+      color: white;
+    }
+
+    h4 > a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color:white;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    h4 > a:hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+
+.product-page {
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+
+/* product-gallery */
+
+img {
+  vertical-align: middle;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin: 15px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.product-gallery {
+  box-sizing: border-box;
+  .active,
+  .demo:hover {
+    opacity: 1;
+    border: solid rgba(0, 0, 0, 0.75);
+  }
+}
+
+/* Product Gallery End*/
+
+.product-description {
+  margin-top: 90px;
+  margin-bottom: 100px
 }
