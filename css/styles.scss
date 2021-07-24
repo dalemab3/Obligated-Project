@@ -1,26 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 @font-face {
-  font-family: "poppins";
-  src: url("fonts/Poppins-Light.ttf");
+  font-family:  "mytupi";
+  src: url(/fonts/mytupi.ttf);
   font-style: normal;
-  font-weight: 100; 
+  font-weight: 100;
 }
 
 @font-face {
-  font-family: "poppins";
-  src: url("fonts/Poppins-SemiBold.ttf");
+  font-family:  "poppins";
+  src: url(/fonts/Poppins-Light.ttf);
   font-style: normal;
-  font-weight: 200; 
+  font-weight: 300;
 }
-  
+
 @font-face {
-    font-family: "mytupi";
-    src: url("fonts/mytupi.ttf");
-    font-style: normal;
-    font-weight: 100;
+  font-family:  "poppins";
+  src: url(/fonts/Poppins-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
 }
+
+@font-face {
+  font-family:  "poppins";
+  src: url(/fonts/Poppins-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
 
 .homeCards {
   padding-top: 15px;
+  .homeCard-title {
+    font-family: "poppins";
+    font-weight: 600;
+  }
 }
 
 body {
@@ -28,6 +42,7 @@ body {
 }
 li {
     font-family: "poppins";
+    font-weight: 300;
 }
 .navbar {
     min-height: 80px;
@@ -275,12 +290,12 @@ a:hover {
 /* Card Overlay */
 .card-overlay {
   position: absolute;
+  width: auto;
   bottom: 0;
-  right: 0;
-  left: 0;
   background-color: rgba(0, 0, 0, .4);
   overflow: hidden;
-  box-sizing: border-box !important;
+  box-sizing: inherit !important;
+  padding: 0px 15px 0px 15px;
   img {
     z-index: 2;
   }
