@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"/>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
 
@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col col-sm-2 col-md-6 col-lg-8">
                     <div class="navbar">
-                        <a class="navbar-brand" style="font-size: 35px;" href="#">Obligated.</a>
+                        <a class="navbar-brand" style="font-size: 35px;" href="index.html">Obligated.</a>
                     </div>
                 </div>
                 <div class="col col-sm-2 col-md-6 col-lg-4 ml-auto">
@@ -34,11 +34,12 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home <span
+                                            class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="shopping.html">Shop</a>
+                                    <a class="nav-link" href="#">Shop</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="mission.html">About</a>
@@ -56,12 +57,12 @@
                 <div id="myNav" class="overlay" style="z-index:2;">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <ul style="list-style-type: none;">
+                        <ul>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
+                                <a class="nav-link" href="shopping.html">Shop</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="mission.html">About</a>
@@ -81,30 +82,12 @@
 
     <main>
         <div class="container-fluid">
-            <div class="row row-content">
-                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators" style="z-index:1;">
-                        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#homeCarousel" data-slide-to="1"></li>
-                        <li data-target="#homeCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/Front Page Cover 3.png" alt="Cover 1" />
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="img/Front Page Cover 2.png" alt="Cover 2" />
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="img/Front Page Cover.png" alt="Cover 3" />
-                        </div>
-                    </div>
-                </div>
+            <div class="row">
+                <img src="img/shophero-lg.png" alt="heroimg" class="hero-img">
             </div>
-
         </div>
 
-        <div class="container">
+        <div class="container product-glossary">
             <div class=" row justify-content-center">
                 <p style="font-size: 3vw;" class="homeCard-title">Featured</p>
             </div>
@@ -112,7 +95,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="homeCards">
                         <a href="product.html">
-                            <img class="d-flex w-100" src="img/Tshirt Model Black.png" alt="Black Shirt Model" />
+                            <img class="d-flex w-100" src="img/First Shirt Black.png" alt="Black Shirt Model" />
                         </a>
                         <div class="card-overlay">
                             <div class="card-block">
@@ -133,7 +116,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="homeCards">
                         <a href="product.html">
-                            <img class="d-flex w-100" src="img/Tshirt Model White.png" alt="White Shirt Model" />
+                            <img class="d-flex w-100" src="img/First Shirt White.png" alt="White Shirt Model" />
                         </a>
                         <div class="card-overlay">
                             <div class="card-block">
@@ -154,7 +137,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="homeCards">
                         <a href="product.html">
-                            <img class="d-flex w-100" src="img/Tshirt Model Pink.png" alt="Pink Shirt Model" />
+                            <img class="d-flex w-100" src="img/First Shirt Pink.png" alt="Pink Shirt Model" />
                         </a>
                         <div class="card-overlay">
                             <div class="card-block">
@@ -175,7 +158,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="homeCards">
                         <a href="product.html">
-                            <img class="d-flex w-100" src="img/Tshirt Model Gray.png" alt="Gray Shirt Model" />
+                            <img class="d-flex w-100" src="img/First Shirt Gray.png" alt="Gray Shirt Model" />
                         </a>
                         <div class="card-overlay">
                             <div class="card-block">
@@ -195,35 +178,9 @@
             </div>
 
         </div>
-
-        <div class="container">
-            <div class="homeInfo">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6">
-                        <div class="homeAbout">
-                            <a href="mission.html#Our-Mission">
-                                <img class="d-flex w-100" src="img/pexelMission.jpeg" alt="Gray Shirt">
-                                <p style="font-size: 3vw;" class="text-white">Our Mission</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-6">
-                        <div class="homeAbout">
-                            <a href="mission.html">
-                                <img class="d-flex w-100" src="img/pexelAbout.jpeg" alt="Gray Shirt">
-                                <p style="font-size: 3vw;" class="text-white">About Us</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </main>
 
-    <!-- Footer -->
     <footer class="page-footer font-small bg-dark text-white">
-
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-2 mx-auto pt-3">
@@ -266,10 +223,14 @@
                         <h3 class="text-center">FOLLOW US</h3>
                     </div>
                     <div class="socialButtons d-flex justify-content-center">
-                        <img src="img/twitter.png" class="btn-floating btn-lg" type="button" role="button" alt="twitter-icon">
-                        <img src="img/instagram.png" class="btn-floating btn-lg" type="button" role="button" alt="instagram-icon">
-                        <img src="img/facebook.png" class="btn-floating btn-lg" type="button" role="button" alt="facebook-icon">
-                        <img src="img/youtube.png" class="btn-floating btn-lg" type="button" role="button" alt="youtube-icon">
+                        <img src="img/twitter.png" class="btn-floating btn-lg" type="button" role="button"
+                            alt="twitter-icon">
+                        <img src="img/instagram.png" class="btn-floating btn-lg" type="button" role="button"
+                            alt="instagram-icon">
+                        <img src="img/facebook.png" class="btn-floating btn-lg" type="button" role="button"
+                            alt="facebook-icon">
+                        <img src="img/youtube.png" class="btn-floating btn-lg" type="button" role="button"
+                            alt="youtube-icon">
                     </div>
                 </div>
 
@@ -295,16 +256,16 @@
         </div>
 
     </footer>
-    <!-- Footer -->
+<!-- Footer -->
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins. -->
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
 
-</body>
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins. -->
+<!-- build:js js/main.js -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+    </body>
 
-</html>
+    </html>
